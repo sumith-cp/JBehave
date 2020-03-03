@@ -11,6 +11,7 @@ phases:
       docker: 18
   pre_build:
     commands:
+      - env
       - echo $CODEBUILD_LOCAL_BUILD
       - yum install tree -y
       - cd /codebuild
