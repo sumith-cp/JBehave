@@ -17,6 +17,8 @@ phases:
       - ls -l ../
       - cd $CODEBUILD_SRC_DIR
       - ls -l ../
+      - stat $CODEBUILD_SRC_DIR_Source2
+      - stat $CODEBUILD_SRC_DIR
       - cat /codebuild/local-cache/cache.json
       - yum install tree -y
       - cd /codebuild
